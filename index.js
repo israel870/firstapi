@@ -55,12 +55,16 @@ const worldCup = [
 ];
 
 
-app.get('/home',(req, res)=>{
+app.get('/',(req, res)=>{
     res.send('Welcome to backend class');
 })
 
-app.get('/worldcup', (req, res)=>{
+app.get('/worldcups', (req, res)=>{
     res.send(worldCup)
+})
+
+app.get('/hurray', (req, res)=>{
+    res.send('I built my first API')
 })
 
 app.listen(port, ()=>{
